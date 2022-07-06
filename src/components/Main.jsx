@@ -15,8 +15,8 @@ const Main = () => {
     setSearchText("");
   };
   const getWeatherDataFromApi = async () => {
-    let apiKey = 75bde13bab7e3c78a358d2dbdb582cf0
-    let apiKey = process.env.REACT_APP_API_KEY;
+    
+    let apiKey = "75bde13bab7e3c78a358d2dbdb582cf0";
     let units = "metric";
     let lang = "tr";
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchText}&appid=${apiKey}&units=${units}&lang=${lang}`;
